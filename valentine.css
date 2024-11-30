@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sacramento', cursive;
+    background: #f8c9d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+#container {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+#image-container {
+    position: relative;
+    z-index: 0;
+}
+
+#image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#yes-gif.hidden {
+    display: none;
+}
+
+#yes-gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    z-index: 2;
+}
+
+#question {
+    font-size: 2.5rem;
+    color: #d06e6e;
+    margin-bottom: 20px;
+}
+
+#options button {
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #f8c9d0;
+}
+
+#yes-button {
+    background-color: #ff7e7e;
+    color: white;
+}
+
+#no-button {
+    background-color: #7e9bff;
+    color: white;
+}
+
+#yes-button:hover {
+    background-color: #ff4e4e;
+}
+
+#no-button:hover {
+    background-color: #4e6ebf;
+}
+
+#yes-button.bigger {
+    transform: scale(1.5);
+}
